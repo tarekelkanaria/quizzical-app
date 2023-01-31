@@ -5,7 +5,7 @@ const Home = (props) => {
     <section className="home__container">
       <article className="home">
         <h1>Quizzical</h1>
-        <p>Quiz App for public information</p>
+        <p>Quiz App for General Knowledge</p>
         <button className="start-quiz" onClick={() => props.start()}>
           Start quiz
         </button>
