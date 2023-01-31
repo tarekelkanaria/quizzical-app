@@ -1,0 +1,37 @@
+.answers {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+.btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 0.8rem 1.6rem;
+  outline: none;
+  border-radius: 0.6rem;
+  color: #293264;
+  cursor: pointer;
+}
+.not-selected {
+  border: 1px solid #4d5b9e;
+  background-color: transparent;
+}
+.selected {
+  border: none;
+  background-color: #d6dbf5;
+}
+.correct-answer {
+  background-color: #94d7a2;
+  color: #293264;
+}
+.incorrect-answer {
+  background-color: #f8bcbc;
+  color: #293264;
+}
+.disable {
+  opacity: 0.5;
+}

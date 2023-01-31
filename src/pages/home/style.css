@@ -1,0 +1,26 @@
+.home__container {
+  height: 100%;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 2rem;
+}
+.start-quiz {
+  padding: 1.5rem 5rem;
+  background-color: #4d5b9e;
+  color: var(--mainColor);
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  box-shadow: 0.3rem 0.3rem 0.5rem #4d5b9e;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+.start-quiz:active {
+  box-shadow: inset 0.2rem 0.2rem 1rem var(--mainColor),
+    inset -0.2rem -0.2rem 1rem var(--mainColor);
+}

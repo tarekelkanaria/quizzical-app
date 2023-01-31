@@ -1,0 +1,30 @@
+.questions {
+  padding: 1rem;
+  color: #293264;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+}
+.question__container {
+  padding-block: 0.5em;
+  border-bottom: 1px solid #dbdef0;
+}
+.question {
+  margin-block: 0.5em;
+}
+.final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.6rem;
+}
+.end {
+  font-family: "Inter", sans-serif;
+  background-color: #4d5b9e;
+  border-radius: 0.6rem;
+  border: none;
+  color: #f5f7fb;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}

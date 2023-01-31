@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap");
+:root {
+  --mainColor: #f5f7fb;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Karla", sans-serif;
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.8rem;
+  background-color: var(--mainColor);
+  overflow-x: hidden;
+}
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .App {
+    height: initial;
+  }
+}
+.decorate-head {
+  width: 20rem;
+  height: 20rem;
+  background-color: #fffad1;
+  transform: rotate(270deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 94% 0% 60% 26% / 100% 51% 0% 0%;
+  z-index: -1;
+}
+.decorate-foot {
+  width: 30rem;
+  height: 20rem;
+  background-color: #deebf8;
+  border-radius: 57% 39% 48% 9% / 31% 100% 0% 69%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
