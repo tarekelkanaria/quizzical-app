@@ -74,7 +74,7 @@ const Questions = () => {
           gameState={gameOver}
         />
       </div>
-    );
+    )
   });
 
   return (
@@ -82,16 +82,16 @@ const Questions = () => {
       {gameOver && correctCount >= 4 && (
         <Confetti width={width} height={height} />
       )}
-      {questionElements}
+      {allQuestions.length > 0 ? questionElements : (<div className="question__container"><h2 className="question">Questions pending ...</h2></div>)}
       <div className="final">
         {gameOver && (
           <p className="end-statement">
             You scored {correctCount}/5 correct answers
           </p>
         )}
-        <button className="end" onClick={endGame}>
-          {gameOver ? "Play again" : "Check answers"}
-        </button>
+        {allQuestions.length > 0 && <button className="end" onClick={endGame}>
+          {gameOver ? "Play again" : "Check answers" }
+        </button>}
       </div>
     </article>
   );
